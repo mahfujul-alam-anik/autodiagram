@@ -1,0 +1,65 @@
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0f172a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #0a0f1c;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #121b32;
+}
+
+/* Scoped scrollbar for sidebar */
+.sidebar {
+  overflow-y: scroll;
+}
+
+.sidebar::-webkit-scrollbar {
+  width: 0px;
+}
+
+.sidebar::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0);
+  border-radius: 2px;
+}
+
+.sidebar::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.selectBox button {
+  background: #0f172a;
+  border: 1px solid #2f405b;
+}
+.selectBox button:hover {
+  background: #0f172a;
+}
+
+.selectBox span {
+  color: #e1d8d8 !important;
+}
+
+input#file-upload-button {
+  color: white !important;
+}
+
+.cartInfo {
+  @apply border-b-1 border-slate-700 pb-3;
+}
+.cartInfo h1 {
+  @apply text-xs text-slate-400 font-semibold;
+}
+.cartInfo p {
+  @apply text-xs text-slate-500;
+}

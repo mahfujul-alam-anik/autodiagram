@@ -2,20 +2,100 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@font-face {
+  font-family: garet;
+  src: url("/fonts/garet.book.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+@font-face {
+  font-family: alex-brush;
+  src: url("/fonts/AlexBrush-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  scroll-behavior: smooth;
+  font-family: garet;
+}
+
+a {
+  text-decoration: none;
+}
+
+.flex-center {
+  @apply flex justify-center items-center;
+}
+
+.flex-between {
+  @apply flex justify-between items-center;
+}
+
+.flex-evenly {
+  @apply flex justify-evenly items-center;
+}
+
+.flex-end {
+  @apply flex justify-end items-center;
+}
+
+.col-flex {
+  @apply flex flex-col;
+}
+
+.direction-rtl {
+  direction: rtl;
+}
+
+.bg-primary {
+  background-color: #ff6600 !important;
+}
+
+.bg-secondary {
+  background-color: #ff6600;
+}
+
+.text-primary {
+  color: #ff6600;
+}
+
+.radial-bg {
+  /* background-image: radial-gradient(
+      at 27% 37%,
+      hsla(215, 98%, 61%, 1) 0px,
+      transparent 0%
+    ),
+    radial-gradient(at 97% 21%, hsla(125, 98%, 72%, 1) 0px, transparent 50%),
+    radial-gradient(at 52% 99%, hsl(16deg 99.17% 52.55%) 0px, transparent 50%),
+    radial-gradient(at 10% 29%, hsla(256, 96%, 67%, 1) 0px, transparent 50%),
+    radial-gradient(at 97% 96%, hsla(38, 60%, 74%, 1) 0px, transparent 50%),
+    radial-gradient(at 33% 50%, hsla(222, 67%, 73%, 1) 0px, transparent 50%),
+    radial-gradient(at 79% 53%, hsla(343, 68%, 79%, 1) 0px, transparent 50%); */
+
+  background-image: radial-gradient(
+      at 27% 37%,
+      rgb(16, 42, 79) 0px,
+      transparent 0%
+    ),
+    radial-gradient(at 97% 21%, rgb(67, 153, 75) 0px, transparent 50%),
+    radial-gradient(at 52% 99%, hsl(33, 99%, 53%) 0px, transparent 50%),
+    radial-gradient(at 10% 29%, rgb(75, 52, 141) 0px, transparent 50%),
+    radial-gradient(at 97% 96%, hsla(38, 60%, 74%, 1) 0px, transparent 50%),
+    radial-gradient(at 33% 50%, hsla(222, 67%, 73%, 1) 0px, transparent 50%),
+    radial-gradient(at 79% 53%, hsla(343, 68%, 79%, 1) 0px, transparent 50%);
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  filter: blur(100px) saturate(150%);
+  opacity: 0.25;
+  z-index: 1;
 }
