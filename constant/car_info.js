@@ -87,8 +87,8 @@ export const manufactureYears = [
 ];
 
 export const gearTypes = [
-  { value: "Manual Gear", label: "Manual Transmission" },
-  { value: "Auto Gear", label: "Automatic Transmission" },
+  { value: "Manual Transmission", label: "Manual Transmission" },
+  { value: "Automatic Transmission", label: "Automatic Transmission" },
 ];
 
 export const workTypes = [
