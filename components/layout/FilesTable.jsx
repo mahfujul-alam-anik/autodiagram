@@ -70,14 +70,14 @@ const FilesTable = () => {
               src={"/images/chat.png"}
               width={23}
               height={20}
-              alt="new ticket"
+              alt="open ticket"
               className="object-contain"
             />
           </Link>
         ) : (
           <div
             className="w-full h-full flex-center cursor-pointer"
-            title="Open"
+            title="New Ticket"
             onClick={() => onOpen()}
           >
             <Image

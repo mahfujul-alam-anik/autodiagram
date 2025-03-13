@@ -318,7 +318,7 @@ const UploadFilePage = () => {
                     />
                     {/* Gear Type */}
                     <Select
-                      label="Select Gear box Type"
+                      label="Select Gearbox Type"
                       onChange={(e) => setGearType(e.target.value)}
                       selectedKey={gearType}
                       size="md"
