@@ -36,7 +36,7 @@ export default function FileCartModal({ itemData, isOpen, onOpenChange }) {
               <ModalBody>
                 <div className="col-flex gap-3 px-5">
                   <div className="flex-between cartInfo">
-                    <h1>Options</h1>
+                    <h1>Car Info</h1>
                     <p>AUDI A6 C6 2008-2010 2.7 TDI 163hp</p>
                   </div>
                   <div className="flex-between cartInfo">
@@ -52,7 +52,7 @@ export default function FileCartModal({ itemData, isOpen, onOpenChange }) {
                     <p>file.txt</p>
                   </div>
                   <div className="flex-between cartInfo">
-                    <h1>Cart Info</h1>
+                    <h1>Options</h1>
                     <div className="col-flex items-end">
                       <p>DPF - 0Tokens</p>
                       <p>MAF - 0Tokens</p>
